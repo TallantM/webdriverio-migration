@@ -1,8 +1,24 @@
-# WebDriverIO → Cypress / Playwright Migration Guide
+# WebDriverIO to Cypress/Playwright Migration Demo
 
-The definitive resource showing exactly how to migrate from legacy WebDriverIO to either Cypress or Playwright.
+A client project demonstration of migrating automated testing from WebDriverIO to Cypress or Playwright, featuring code examples, multi-framework comparisons, and setup instructions for seamless adoption.
 
-Pick one framework. Migrate cleanly. Ship faster.
+## Prerequisites
+- Node.js 18.0+
+- Git
+- Visual Studio Code (with TypeScript extension recommended)
+- npm (included with Node.js)
+
+## Setup
+1. Clone the repo: `git clone https://github.com/yourusername/webdriverio-migration-demo.git`
+2. Navigate to the project: `cd webdriverio-migration-demo`
+3. Install dependencies: `npm install`
+
+## Running the Examples Locally
+- For Cypress: `npm run cypress`
+- For Playwright: `npm run playwright`
+
+## CI/CD
+GitHub Actions workflow in `.github/workflows/ci.yml` runs examples on push/pull requests.
 
 ## Choose Your Migration Path
 
@@ -36,11 +52,3 @@ await page.fill('#username', 'tomsmith');
 await page.fill('#password', 'SuperSecretPassword!');
 await page.click('button[type="submit"]');
 ```
-
-## Run the examples
-```bash
-npm install
-npm run cypress
-npm run playwright
-```
-  
